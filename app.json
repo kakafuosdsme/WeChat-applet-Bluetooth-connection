@@ -1,0 +1,27 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/res/res",
+    "pages/home/home",
+    "pages/shezhi-2/shezhi-2",
+    "pages/shezhi/shezhi",
+    "pages/modbus/modbus",
+    "pages/write/write",
+    "pages/chakan/chakan",
+    "pages/shezhi-3/shezhi-3",
+    "pages/jiaozhun/jiaozhun",
+    "pages/ceshi/ceshi",
+    "pages/password/password",
+    "pages/lanya/lanya",
+    "pages/notify/notify",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "温压流",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

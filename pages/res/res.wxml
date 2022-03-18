@@ -1,0 +1,8 @@
+<!--pages/res/res.wxml-->
+
+<!-- <view wx:for="{{array}}" id="{{item.uuid}}" bindtap='sub'>
+{{item.uuid}}
+
+</view> -->
+
+<button class="btn" type="primary" size="mini" bindtap="ReadBtnClick">确定</button>

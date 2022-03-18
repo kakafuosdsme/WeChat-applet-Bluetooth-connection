@@ -1,0 +1,150 @@
+<!--pages/shezhi-2/shezhi-2.wxml-->
+<!--pages/shezhi/shezhi.wxml-->
+
+<view class="biaoti">
+  <text >设置菜单</text>
+</view>
+<text decode>&nbsp;</text>
+
+<view class="biaogekuang">
+  <view class="zicaidan">波动范围：</view> 
+    <view class="hang">温度波动：<view class="shuju">{{TempWave}}</view> 
+        <button id="18" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="18" class="input" placeholder="请输入" bindinput="valueInput" type="digit"/>
+        <button id="18" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">压力波动：<view class="shuju">{{PrsuWave}}</view> 
+        <button id="6" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input  id="6" class="input" placeholder="请输入" bindinput="valueInput" type="digit"/>
+        <button id="6" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">流速波动：<view class="shuju">{{FlowWave}}</view> 
+        <button id="13" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="13" class="input" placeholder="请输入" bindinput="valueInput" type="digit"/>
+        <button id="13" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+</view>
+
+<text decode>&nbsp;</text>
+
+<view class="biaogekuang">
+  <view class="zicaidan">输入量程：</view> 
+    <view class="hang">温度上限：<view class="shuju">{{TempUpLmt}}</view> 
+        <button id="14" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="14" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="14" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">温度下限：<view class="shuju">{{TempDnLmt}}</view> 
+        <button id="15" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="15" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="15" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">压力上限：<view class="shuju">{{DptUpLmt}}</view> 
+        <button id="3" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="3" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="3" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">压力下限：<view class="shuju">{{DptDnLmt}}</view> 
+        <button id="4" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="4" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="4" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">差压上限：<view class="shuju">{{PtUpLmt}}</view> 
+        <button id="9" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="9" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="9" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">差压下限：<view class="shuju">{{PtDnLmt}}</view> 
+        <button id="10" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="10" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="10" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+</view>
+
+<text decode>&nbsp;</text>
+
+<view class="biaogekuang">
+  <view class="zicaidan">相关系数：</view> 
+    <view class="hang">皮托管系数：<view class="shuju">{{PitotCoeff}}</view> 
+        <button id="19" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="19" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="19" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">速度场系数：<view class="shuju">{{flowtCoeff}}</view> 
+        <button id="51" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="51" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="51" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+</view>
+
+<view class="biaogekuang">
+  <view class="zicaidan">保护与地址：</view> 
+    <view class="hang">过压保护：<view class="shuju">{{preshug}}</view> 
+        <button id="34" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="34" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="34" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">设备地址：<view class="shuju">{{devAddr}}</view> 
+        <button id="32" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="32" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="32" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+</view>
+
+<!-- <view class="biaogekuang">
+  <view class="zicaidan">串口1设置：</view> 
+    <view class="hang">波特率：<view class="shuju">{{botelv1}}</view> 
+        <button id="34" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="34" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="34" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">协议：<view class="shuju">{{xieyi1}}</view> 
+        <button id="34" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="34" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="34" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+</view>
+
+<view class="biaogekuang">
+  <view class="zicaidan">串口2设置：</view> 
+    <view class="hang">波特率：<view class="shuju">{{botelv2}}</view> 
+        <button id="34" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="34" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="34" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">协议：<view class="shuju">{{xieyi2}}</view> 
+        <button id="34" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="34" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="34" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+</view> -->

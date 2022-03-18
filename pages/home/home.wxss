@@ -1,0 +1,31 @@
+/* pages/home/home.wxss */
+.biaoti{
+  width: 100%;
+  font-size:  50rpx; 
+  text-align: center;
+}
+.biaogekuang{
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.15);
+}
+.zicaidan{
+  text-align: center;
+  width: 100%;
+  font-size:  35rpx; 
+}
+.shuju{
+  border: 1px solid #ccc;
+  border-radius: 10rpx;
+  width: 30%;
+  height: 30px;
+  min-height: 30px;
+  padding-left: 10rpx;
+}
+.hang{
+  display: flex;
+}
+
+.flex-wrp{
+  width: 100%;
+}

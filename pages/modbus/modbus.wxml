@@ -1,0 +1,4 @@
+<!--pages/modbus/modbus.wxml-->
+<button type="primary" bindtap="wendu">温度
+</button>
+<view>{{name}}+{{addr}}+{{num}}+{{size}}</view>

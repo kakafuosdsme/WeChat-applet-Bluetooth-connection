@@ -1,0 +1,144 @@
+<!--pages/shezhi/shezhi.wxml-->
+
+<view class="biaoti">
+  <text >设置菜单</text>
+</view>
+<text decode>&nbsp;</text>
+
+<view class="biaogekuang">
+  <view class="zicaidan">输出量程：</view> 
+    <view class="hang">温度量程：<view class="shuju">{{TempOutRge}}</view> 
+        <button id="17" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="17" class="input" placeholder="请输入" bindinput="valueInput" type="digit"/>
+        <button id="17" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">压力上限：<view class="shuju">{{PrsuOUpLmt}}</view> 
+        <button id="7" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input  id="7" class="input" placeholder="请输入" bindinput="valueInput" type="digit"/>
+        <button id="7" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">压力下限：<view class="shuju">{{PrsuODnLmt}}</view> 
+        <button id="8" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="8" class="input" placeholder="请输入" bindinput="valueInput" type="digit"/>
+        <button id="8" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">流速量程：<view class="shuju">{{FlowRange}}</view> 
+        <button id="11" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="11" class="input" placeholder="请输入" bindinput="valueInput" type="digit"/>
+        <button id="11" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+</view>
+
+<text decode>&nbsp;</text>
+
+<view class="biaogekuang">
+  <view class="zicaidan">滑动系数：</view> 
+    <view class="hang">温度系数：<view class="shuju">{{TempAvge}}</view> 
+        <button id="30" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="30" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="30" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">压力系数：<view class="shuju">{{PrsuAvge}}</view> 
+        <button id="27" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="27" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="27" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">流速系数低：<view class="shuju">{{FSmallAvge}}</view> 
+        <button id="29" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="29" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="29" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">流速系数高：<view class="shuju">{{FLargeAvge}}</view> 
+        <button id="28" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="28" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="28" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+</view>
+
+<text decode>&nbsp;</text>
+
+<view class="biaogekuang">
+  <view class="zicaidan">时间设置：</view> 
+    <view class="hang">自动反吹周期：<view class="shuju">{{AutoRevBlowPeriod}}</view> 
+        <button id="25" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="25" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="25" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">持续时间：<view class="shuju">{{RevBlowTime}}</view> 
+        <button id="22" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="22" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="22" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">高频反吹周期：<view class="shuju">{{HighRevBlowPeriod}}</view> 
+        <button id="39" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="39" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="39" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">高频反吹持续：<view class="shuju">{{HighRevBlowTime}}</view> 
+        <button id="38" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="38" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="38" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">自动调零周期：<view class="shuju">{{AutoZeroPeriod}}</view> 
+        <button id="24" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="24" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="24" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">延时时间：<view class="shuju">{{ZeroWaitTime}}</view> 
+        <button id="23" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="23" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="23" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang">温度保持时间：<view class="shuju">{{TempHoldTime}}</view> 
+        <button id="21" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="21" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="21" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+</view>
+
+<view class="biaogekuang">
+  <view class="zicaidan">风扇温度：</view> 
+    <view class="hang">风扇温度：<view class="shuju">{{FanTemp}}</view> 
+        <button id="26" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="26" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="26" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+</view>
+
+<view class="biaogekuang">
+  <view class="zicaidan">气压设置：</view> 
+    <view class="hang">气压设置：<view class="shuju">{{atpSet}}</view> 
+        <button id="50" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>
+        <input id="50" class="input" placeholder="请输入" bindinput="valueInput" type="number"/>
+        <button id="50" class="btn" type="primary" size="mini" bindtap="WriteBtnClick">设置</button>
+    </view>
+    <text decode>&nbsp;</text>
+</view>

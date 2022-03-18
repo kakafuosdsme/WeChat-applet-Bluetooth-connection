@@ -1,0 +1,25 @@
+<!--pages/chakan/chakan.wxml-->
+<view>
+<view class="lingdian">零点</view> 
+<view>温度:{{temperzero}}℃
+
+</view>
+<view>压力:{{pressurezero}}Pa</view>
+<view>流速:{{flowzero}}m/s</view>
+</view>
+<text decode>&nbsp;</text>
+<view>
+<view class="yuanshixinhao">原始信号</view> 
+<view>温度:{{temperysxh}}</view>
+<view>压力:{{pressureysxh}}ad</view>
+<view>差压:{{flowysxh}}ad</view>
+</view>
+<text decode>&nbsp;</text>
+<view class="yuanshixinhao">软件版本
+<view>版本号：{{banbenver}}</view>
+</view>
+<text decode>&nbsp;</text>
+<view class="shebeibianhao">设备编号
+<view>编号：{{shebeiver}}</view>
+</view>
+<button type="primary" bindtap="chakan" >一键读取</button>

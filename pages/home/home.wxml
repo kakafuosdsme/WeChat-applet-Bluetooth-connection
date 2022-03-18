@@ -1,0 +1,43 @@
+<!-- 温压流主界面 -->
+<text decode>&nbsp;</text>
+<view class="biaogekuang">
+  <view class="zicaidan">主界面</view> 
+  <text decode>&nbsp;</text>
+    <view class="hang" >　　　　　　温度：<view class="shuju">{{temper}}</view> 
+        <!-- <button id="0" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>    -->
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang" >　　　　　　压力：<view class="shuju">{{pressure}}</view> 
+        <!-- <button id="1" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>      -->
+    </view>
+    <text decode>&nbsp;</text>
+
+    <view class="hang" >　　　　　　流速：<view class="shuju">{{flow}}</view> 
+        <!-- <button id="2" class="btn" type="primary" size="mini" bindtap="ReadBtnClick">读取</button>       -->
+    </view>
+    <text decode>&nbsp;</text>
+</view>
+
+<text decode>&nbsp;</text>
+<text decode>&nbsp;</text>
+<view class="biaogekuang">
+  <view class="zicaidan">菜单</view> 
+  <text decode>&nbsp;</text>
+<button class="查看" class="btn1" type="primary" >
+  <navigator  url="/pages/chakan/chakan">查看</navigator>
+</button>
+<text decode>&nbsp;</text>
+<button class="设置" class="btn2" type="primary"  bindtap="password">设置
+  <!-- <navigator  url="/pages/shezhi/shezhi">设置</navigator> -->
+</button>
+<text decode>&nbsp;</text>
+<button class="校准" class="btn1" type="primary" >
+  <navigator url="/pages/jiaozhun/jiaozhun">校准</navigator>
+  </button>
+<text decode>&nbsp;</text>
+<button class="测试" class="btn2" type="primary"  >
+    <navigator url="/pages/ceshi/ceshi">测试</navigator>
+  </button>
+  <text decode>&nbsp;</text>  
+</view>
